@@ -1,9 +1,9 @@
-import React from 'react';
+import {forwardRef} from 'react';
 import styles from "./About.module.css";
 
-const About = () => {
+const About = (_props: any, ref: any) => {
     return (
-        <div className={styles.section}>
+        <div ref={ref} className={styles.section}>
             <div className={styles.container}>
                 About
             </div>
@@ -11,4 +11,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default forwardRef(About);

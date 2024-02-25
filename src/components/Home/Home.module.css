@@ -1,16 +1,69 @@
 .container {
+    height: 100vh;
+    background-color: #dedede;
+}
+
+.homeContainer {
     height: 100%;
     scroll-snap-align: center;
-    width: 1400px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.section {
-    height: 100vh;
-    scroll-snap-align: center;
+.left,
+.right {
+    flex: 2;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.9s ease;
+}
+
+.right {
+    flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(150px);
 }
+
+.right.loaded,
+.left.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.headerText {
+    width: 70%;
+    font-size: 5rem;
+    font-family: "Sitka Banner", serif;
+    text-align: center;
+    /*margin-top: 50px;*/
+}
+
+.heroParagraph {
+    font-size: 2rem;
+    width: 80%;
+    font-family: "Sitka Banner", serif;
+    text-align: center;
+}
+
+.headerText,
+.heroParagraph {
+    text-align: center;
+    font-family: "Sitka Banner", serif;
+}
+
+.right.loaded .headerText,
+.right.loaded .heroParagraph {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
