@@ -1,0 +1,53 @@
+/* i want a display flex navbar with evenly spaced li inside it with color white no decoration and instead of starting from the left side start from the right*/
+.navbar_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    height: 60px;
+}
+
+.navbar_container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    /*padding: 0;*/
+    /*margin: 0;*/
+    gap: 40px;
+}
+
+.navbar_container ul li {
+    padding: 0 10px;
+    margin-right: 30px;
+}
+
+/* the second li need to have width of 100px*/
+.navbar_container li:nth-child(2) {
+    width: 120px;
+}
+
+.navbar_container ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar_container ul li:hover {
+    color: #BDAA44;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-height: 875px) {
+    .navbar_container ul {
+        gap: 0;
+    }
+}
+
+@media screen and (max-height: 690px) {
+    .navbar_container ul li {
+        gap: 0;
+        margin:0;
+    }
+}
