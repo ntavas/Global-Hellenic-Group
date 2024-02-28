@@ -3,18 +3,18 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .container {
-    background-image: url("./../../assets/images/home-banner-background.png");
-    background-repeat: no-repeat;
-    background-size:45%;
-    background-position: top right;
+    /* Add gradient overlay to fade at the bottom */
+    background-size: contain;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 100%),
+    url("./../../assets/images/home-banner-background.png") no-repeat top right;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    animation: fadeInBackground 1s ease-in-out forwards; /* Change forwards to backwards */
 }
 
 .header {
@@ -50,11 +50,20 @@
 
 @keyframes fadeInUp {
     from {
-        transform: translateY(50px); /* Start below the visible area */
+        transform: translateY(50px);
         opacity: 0;
     }
     to {
-        transform: translateY(0); /* Move to the correct position */
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
@@ -81,7 +90,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /*margin-top: 20px;*/
 }
 .homeContactUsButton {
     width: 120px;
@@ -113,7 +121,6 @@
 }
 
 
-/*make responsive for laptop */
 @media screen and (max-width: 1024px) {
     .container {
         background-size: 50%;
@@ -129,7 +136,6 @@
     }
 }
 
-/*make responsive for tablet, remove image and background image, and center the content in the page, with bigger font size*/
 @media screen and (max-width: 768px) {
     .container {
         background-image: none;
