@@ -29,7 +29,8 @@ const string = new LocalizedStrings({
             "παρατείνει τη διάρκειαζωής των καθαριζόμενων επιφανειών. Με όπλο την δεκαετή μας εμπειρία, την " +
             "τεχνογνωσία, τον εξειδικευμένο εξοπλισμό και τα αποτελεσματικά προϊόντα καθαρισμού, παρέχουμε " +
             "υπηρεσίες υψηλής ποιότητας. Η εταιρεία μας διαθέτει πιστοποιημένα και ασφαλή μηχανήματα και " +
-            "προϊόντα τα οποία εισάγονται απευθείας από την Αυστραλία."
+            "προϊόντα τα οποία εισάγονται απευθείας από την Αυστραλία.",
+        workDescription: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.",
     }
 });
 
