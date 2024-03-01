@@ -55,11 +55,13 @@
 
 .right h1 {
     font-size: 3rem;
+    font-weight: 300;
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
 .right p {
-    font-size: 22px;
+    font-size: 1.3rem;
+    font-weight: 200;
     color: #000000;
     text-align: center;
     margin-top: 20px;

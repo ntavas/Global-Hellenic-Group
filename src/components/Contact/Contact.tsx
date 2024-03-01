@@ -35,7 +35,7 @@ const Contact = () => {
                         <div className={styles.row}>
                             <div className={styles.column}>
                                 <label htmlFor="message">{strings.contactMessage}</label>
-                                <textarea rows={13} className={styles.message} id="message" name="message" placeholder={strings.contactMessagePlaceHolder} maxLength={4000}/>
+                                <textarea rows={26} className={styles.message} id="message" name="message" placeholder={strings.contactMessagePlaceHolder} maxLength={4000}/>
                             </div>
                         </div>
                         <button className={styles.contactFormButton} type="submit">
