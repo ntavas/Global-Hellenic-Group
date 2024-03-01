@@ -30,7 +30,7 @@
     height: 80%;
     border-radius: 5%;
     object-fit: cover;
-    margin-top: 80px;
+    padding-top: 30px;
     animation: fadeInUp 0.8s ease-in-out forwards;
 }
 

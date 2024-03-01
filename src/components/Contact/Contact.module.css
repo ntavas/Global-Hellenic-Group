@@ -1,0 +1,85 @@
+.section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-size: 40.42%;
+    background: url("./../../assets/images/contact-banner-background-top-left.png") no-repeat top left;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+    animation: fadeInBackground 1s ease-in-out backwards;
+}
+
+.contactParagraph {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #5d5d5d;
+    width: 40%;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out forwards;
+
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 460px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contactForm input {
+    width: 95%;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid #5d5d5d;
+    border-radius: 4px;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message {
+    resize: none;
+    border: 1px solid #5d5d5d;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.contactFormButton {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #E6C82C;
+    color: #000000;
+    border: 1px solid #5d5d5d;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}

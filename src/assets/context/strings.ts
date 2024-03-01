@@ -31,6 +31,17 @@ const string = new LocalizedStrings({
             "υπηρεσίες υψηλής ποιότητας. Η εταιρεία μας διαθέτει πιστοποιημένα και ασφαλή μηχανήματα και " +
             "προϊόντα τα οποία εισάγονται απευθείας από την Αυστραλία.",
         workDescription: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.",
+        contactUsParagraph: "Χρειάζεστε περισσότερες πληροφόριες; Συμπληρώστε την παρακάτω φόρμα και θα επικοινωνήσουμε μαζί μας.",
+        contactName: "Όνομα",
+        contactLastName: "Επώνυμο",
+        contactEmail: "Email",
+        contactPhoneNumber: "Τηλέφωνο",
+        contactMessage: "Μήνυμα",
+        contactMessagePlaceHolder: "Γράψτε το μήνυμά σας...",
+        contactButtonSend: "Αποστολή",
+        footerTextLocation: "Global Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
+        footerTextPhone: "+30 6940839572",
+        footerTextEmail: "info@ghg.gr"
     }
 });
 
