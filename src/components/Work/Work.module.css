@@ -97,3 +97,68 @@ thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-chil
 thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
     border-radius: 0 0 0 4px;
 }
+
+@media screen and (max-width: 1150px){
+    .right {
+        padding-right: 110px;
+    }
+}
+
+@media screen and (max-width: 1090px){
+    .container::before {
+        background-image: none;
+        background-color: #ECECECFF;
+        filter: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .right {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    
+    .left .description {
+        color: #000;
+        backdrop-filter: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container::before {
+        background-image: none;
+        filter: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .right {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .left .description {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .left .description {
+        font-size: 1.2rem;
+    }
+}

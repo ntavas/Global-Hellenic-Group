@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from "../About/About.module.css";
 import strings from "../../assets/context/strings.ts";
 import aboutImage from '../../assets/images/about-cleaning-crew.png';

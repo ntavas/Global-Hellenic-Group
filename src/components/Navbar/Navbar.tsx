@@ -1,4 +1,3 @@
-import React from 'react';
 import strings from './../../assets/context/strings';
 import styles from './Navbar.module.css';
 
