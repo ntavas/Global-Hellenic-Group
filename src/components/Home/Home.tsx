@@ -2,7 +2,7 @@ import {Box, Stack} from "@mui/material";
 import strings from "../../assets/context/strings.ts";
 import workersImage from "../../assets/images/work-background.jpg";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import {HomeButton, HomeHeader, HomeImage, HomeParagraph} from "../styled-components/Home/HomeStyledComponents.tsx";
+import {HomeButton, HomeHeader, HomeImage, HomeParagraph} from "./HomeStyledComponents.tsx";
 import {SxProps} from "@mui/system/styleFunctionSx";
 
 const Home = () => {

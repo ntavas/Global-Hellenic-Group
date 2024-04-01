@@ -1,5 +1,5 @@
 import {Button, styled} from "@mui/material";
-import {theme} from "../../../theme.tsx";
+import {theme} from "../../theme.tsx";
 
 export const HomeButton = styled(Button)({
     color: "white",
