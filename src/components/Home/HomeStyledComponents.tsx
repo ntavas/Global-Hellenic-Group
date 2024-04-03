@@ -13,6 +13,8 @@ export const HomeButton = styled(Button)({
     position: 'relative',
     overflow: 'hidden',
     transition: 'width 0.3s ease-in-out', // Transition for button width
+    // add some shadow below the button
+    boxShadow: '0 5px 15px rgba(0, 0, 0, 0.384)',
     '&:hover': {
         backgroundColor: '#222222',
         width: '170px', // Increase width on hover
@@ -44,6 +46,7 @@ export const HomeButton = styled(Button)({
 
 export const  HomeParagraph = styled('p')({
     color: theme.palette.text.primary,
+    fontFamily: 'Inter',
     fontSize: '1.3rem',
     width: '35%',
     wordWrap: 'break-word',
