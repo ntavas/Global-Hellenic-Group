@@ -41,8 +41,13 @@ const string = new LocalizedStrings({
             "τεχνογνωσία, τον εξειδικευμένο εξοπλισμό και τα αποτελεσματικά προϊόντα καθαρισμού, παρέχουμε " +
             "υπηρεσίες υψηλής ποιότητας. Η εταιρεία μας διαθέτει πιστοποιημένα και ασφαλή μηχανήματα και " +
             "προϊόντα τα οποία εισάγονται απευθείας από την Αυστραλία.",
+
+        // Work Page
         workDescription: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ndustries for previewing oait.",
-        contactUsParagraph: "Χρειάζεστε περισσότερες πληροφόριες; Συμπληρώστε την παρακάτω φόρμα και θα επικοινωνήσουμε μαζί σας.",
+
+        // Contact Page
+        contactHeader: "Επικοινωνήστε μαζί μας",
+        contactParagraph: "Χρειάζεστε περισσότερες πληροφόριες; Συμπληρώστε την φόρμα και θα επικοινωνήσουμε μαζί σας.",
         contactName: "Όνομα",
         contactLastName: "Επώνυμο",
         contactEmail: "Email",
@@ -50,6 +55,8 @@ const string = new LocalizedStrings({
         contactMessage: "Μήνυμα",
         contactMessagePlaceHolder: "Γράψτε το μήνυμά σας...",
         contactButtonSend: "Αποστολή",
+
+        // Footer
         footerTextLocation: "Global Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
         footerTextPhone: "+30 6940839572",
         footerTextEmail: "info@ghg.gr"

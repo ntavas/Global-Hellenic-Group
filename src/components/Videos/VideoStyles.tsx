@@ -36,6 +36,7 @@ export const containerStyles: SxProps = {
     height: "70%",
     borderRadius: "1rem",
     overflow: "hidden",
+    backgroundColor: 'lightblue'
   }
 
   export const descriptionStyles: SxProps = {
