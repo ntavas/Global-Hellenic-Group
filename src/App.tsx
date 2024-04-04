@@ -4,6 +4,7 @@ import {Box} from "@mui/material";
 import Video from './components/Videos/Video.tsx';
 import About from './components/About/About.tsx';
 import Contact from './components/Contact/Contact.tsx';
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Video/>
                 <About/>
                 <Contact/>
+                <Footer />
             </Box>
         </>
     );

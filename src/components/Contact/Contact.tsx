@@ -3,7 +3,6 @@ import strings from "../../assets/context/strings";
 import {useState} from "react";
 import {ContactPageContainer, LeftContainer, RightContainer, ContactForm, ContactButton} from "./ContactStyledComponents";
 import {headerStyles, paragraphStyles} from "./ContactStyles.tsx";
-
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',

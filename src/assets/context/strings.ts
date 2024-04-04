@@ -57,9 +57,11 @@ const string = new LocalizedStrings({
         contactButtonSend: "Αποστολή",
 
         // Footer
+        footerHeaderCompanyName: "Global Hellenic Group",
         footerTextLocation: "Global Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
         footerTextPhone: "+30 6940839572",
-        footerTextEmail: "info@ghg.gr"
+        footerTextEmail: "info@ghg.gr",
+        copyRight: "Copyright © 2027 Global Hellenic Group | Developed by Konstantinos Ntavarinos",
     }
 });
 

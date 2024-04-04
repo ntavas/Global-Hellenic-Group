@@ -45,9 +45,13 @@ export const ContactForm = styled(Box)({
 
 export const ContactButton = styled(Button)({
     marginTop: "0.3rem",
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: "#222222",
     borderRadius: "0.2rem",
     color: theme.palette.primary.contrastText,
     width: "100%",
     boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.2)",
+
+    '&:hover': {
+        backgroundColor: "#333333",
+    }
 });
