@@ -1,5 +1,27 @@
-import {Button, styled} from "@mui/material";
-import {theme} from "../../theme.tsx";
+import {Box, Button, Grid, styled} from "@mui/material";
+
+export const GridContainer = styled(Grid)({
+    minHeight: "100dvh",
+    opacity: 0,
+    animation: "fadeIn 1s forwards",
+    paddingTop: "3rem",
+    "@keyframes fadeIn": {
+        "from": {
+            opacity: 0
+        },
+        "to": {
+            opacity: 1
+        }
+    },
+});
+
+export const HeaderContainer = styled(Box)({
+    // flex={1} display="flex" justifyContent="center" alignItems="center"
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 1,
+});
 
 export const HomeButton = styled(Button)({
     color: "white",
@@ -43,29 +65,20 @@ export const HomeButton = styled(Button)({
     },
 });
 
-export const  HomeParagraph = styled('p')({
-    color: theme.palette.text.primary,
-    fontFamily: 'sans-serif',
-    fontSize: '1.3rem',
-    width: '35%',
-    wordWrap: 'break-word',
-    textAlign: 'center',
-    '@media (max-width: 768px)': {
-        fontSize: '1rem',
-        width: '80%',
-    },
-});
 
-export const  HomeHeader = styled('h1')({
-    fontSize: '3.3rem',
-    width: '50%',
-    wordWrap: 'break-word',
-    color: '#E6C82C',
-    textAlign: 'center',
+export const ImageAndParagraphContainer = styled(Box)({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    width: "100%",
+    gap: '1.2rem',
+    flex: 1,
     '@media (max-width: 768px)': {
-        fontSize: '1.8rem',
         width: '80%',
-    },
+        height: 'auto',
+        paddingLeft: '10%',
+        },
 });
 
 export const  HomeImage = styled('img')({
@@ -74,9 +87,11 @@ export const  HomeImage = styled('img')({
     maxHeight:"500px",
     width: "100%",
     height: "auto",
+    borderRadius: "1.3rem",
     objectFit: "contain",
     '@media (max-width: 768px)': {
-        width: '100%',
+        width: '70%',
+        marginLeft: '16%',
         height: 'auto',
     },
 });

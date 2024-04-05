@@ -5,7 +5,7 @@ import { theme } from "../../theme";
 export const containerStyles: SxProps = {
   opacity: 0,
   backgroundColor: "#F7F7F7",
-  height: "100vh",
+  minHeight: "100vh",
   animation: "fadeIn 1s forwards",
     "@keyframes fadeIn": {
         "from": {
