@@ -3,11 +3,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import strings from "../../assets/context/strings.ts";
 import { AccordionContainer } from "./AboutStyledComponents.tsx";
 import { accordionStyle, accordionSummaryStyle, headerStyle } from "./AboutStyles.tsx";
+import {forwardRef, Ref} from 'react';
 
-const About = () => {
+interface AboutProps {
+}
+
+const About = forwardRef((_props: AboutProps, ref: Ref<HTMLDivElement>) => {
 
   return (
-    <Box sx={{
+    <Box ref={ref} sx={{
       height: '100vh',
         display: 'flex',
         flexDirection: 'column',
@@ -60,6 +64,6 @@ const About = () => {
       </AccordionContainer>
     </Box>
   );
-}
+})
 
 export default About;

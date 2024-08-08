@@ -10,15 +10,23 @@ import {
     ImageAndParagraphContainer
 } from "./HomeStyledComponents.tsx";
 import {headerStyles, paragraphStyles} from "./HomeStyles.tsx";
+import Navbar from "../Navbar/Navbar.tsx";
+import {forwardRef, Ref} from "react";
+
+interface HomeProps {
+    handleNavigation: (page: string) => void;
+}
 
 
-const Home = () => {
+const Home = (props: HomeProps, ref: Ref<HTMLDivElement>) => {
 
     return (
-        <GridContainer>
+        <>
+        <Navbar handleNavigation={props.handleNavigation}/>
+        <GridContainer ref={ref} id="home">
             <Stack spacing={3} direction="column" justifyContent="space-evenly">
                 <HeaderContainer>
-                    <Typography variant={'h2'} sx={headerStyles}>{strings.navBarHeader}</Typography>
+                    <Typography variant={'h1'} sx={headerStyles}>{strings.navBarHeader}</Typography>
                 </HeaderContainer>
                 <ImageAndParagraphContainer>
                     <Box sx={{ borderRadius: "1.5rem", overflow: "hidden" }}>
@@ -36,7 +44,9 @@ const Home = () => {
                 </Box>
             </Stack>
         </GridContainer>
+        </>
+        
     );
 };
 
-export default Home;
+export default forwardRef(Home);

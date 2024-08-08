@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <Left>
-                <LogoImage src="logo3.png" alt="logo" />
+                <LogoImage src="logo.png" alt="logo" />
                 <FooterHeader>{strings.footerHeaderCompanyName}</FooterHeader>
             </Left>
             <Right>

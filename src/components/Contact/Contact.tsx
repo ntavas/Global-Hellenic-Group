@@ -3,7 +3,9 @@ import strings from "../../assets/context/strings";
 import {useState} from "react";
 import {ContactPageContainer, LeftContainer, RightContainer, ContactForm, ContactButton} from "./ContactStyledComponents";
 import {headerStyles, paragraphStyles} from "./ContactStyles.tsx";
-const Contact = () => {
+import {forwardRef} from "react";
+
+const Contact = (props: any, ref: any) => {
     const [formData, setFormData] = useState({
         name: '',
         lastName: '',
@@ -24,7 +26,7 @@ const Contact = () => {
 
 
     return (
-        <ContactPageContainer>
+        <ContactPageContainer ref={ref} id="contact">
             <LeftContainer>
                 <Typography sx={headerStyles} variant="h2">{strings.contactHeader}</Typography>
                 <Typography sx={paragraphStyles}>{strings.contactParagraph}</Typography>
@@ -87,4 +89,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default forwardRef(Contact);

@@ -6,10 +6,10 @@ export const paragraphStyles: SxProps = {
     fontFamily: 'sans-serif',
     fontSize: {
         xs: '0.8rem',
-        sm: '1.2rem',
-        md: '1.3rem',
-        lg: '1.3rem',
-        xl: '1.5rem',
+        sm: '1rem',
+        md: '1.1rem',
+        lg: '1.2rem',
+        xl: '1.3rem',
     },
     width: {
         xs: '80%',
@@ -33,4 +33,5 @@ export const headerStyles: SxProps = {
     wordWrap: 'break-word',
     color: '#E6C82C',
     textAlign: 'center',
+    marginTop: '-25px'
 }
