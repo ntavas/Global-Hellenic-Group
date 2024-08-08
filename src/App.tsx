@@ -47,9 +47,9 @@ function App() {
                 
                 <Home handleNavigation={handleNavigation} ref={homeRef} id="home"/>
                 <Video ref={videoRef} id="video"/>
-                {/*<About ref={aboutRef} id="about"/>*/}
-                {/*<Contact ref={contactRef} id="contact"/>*/}
-                {/*<Footer/>*/}
+                <About ref={aboutRef} id="about"/>
+                <Contact ref={contactRef} id="contact"/>
+                <Footer/>
             </Box>
         </>
     );

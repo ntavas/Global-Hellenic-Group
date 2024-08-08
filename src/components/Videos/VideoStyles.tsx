@@ -9,12 +9,17 @@ export const containerStyles: SxProps = {
   "@keyframes fadeIn": {
     "from": { opacity: 0 },
     "to": { opacity: 1 }
+  },
+
+  [theme.breakpoints.down('md')]: {
+    minHeight: "150vh",
   }
 };
 
 export const stackStyles: SxProps = {
   justifyContent: "space-around",
   height: "100vh",
+
 };
 
 export const RowStyles: SxProps = {

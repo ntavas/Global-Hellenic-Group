@@ -1,49 +1,71 @@
 import {Box, Button, styled} from "@mui/material";
-import {theme} from "../../theme.tsx";
 
-export const ContactPageContainer = styled(Box)({
+export const ContactPageContainer = styled(Box)(({ theme }) => ({
     display: "flex",
-    height: "100vh",
     flexDirection: "row",
-    // alignItems: "center",
-    // justifyContent: "center",
+    height: "auto",
     width: "100vw",
     backgroundColor: "#F7F7F7",
-});
+    // padding: "2rem",
+    margin: '0',
 
-export const LeftContainer = styled(Box)({
+    [theme.breakpoints.down('md')]: { // For tablets and smaller screens
+        flexDirection: "column",
+        // padding: "1rem",
+    },
+}));
+
+export const LeftContainer = styled(Box)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center", // Align items to the start
+    justifyContent: "center",
     gap: "2rem",
     flex: 1,
-    // paddingTop: "15%", // Adjust this value to your liking
-});
+    textAlign: "center",
+    padding: "2rem",
 
-export const RightContainer = styled(Box)({
+    [theme.breakpoints.down('md')]: {
+        padding: "1rem",
+    },
+}));
+
+export const RightContainer = styled(Box)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     gap: "1rem",
     flex: 1,
-});
+    padding: "2rem",
 
-export const ContactForm = styled(Box)({
+    [theme.breakpoints.down('md')]: {
+        padding: "1rem",
+    },
+}));
+
+export const ContactForm = styled(Box)(({ theme }) => ({
     display: "flex",
-    // border: "1px solid #888888",
-    borderRadius: "0.3rem",
-    backgroundColor: "#FFFFFF",
-    padding: "1rem",
     flexDirection: "column",
     gap: "1rem",
     width: "50%",
-    height: "36.5rem",
-    boxShadow:  "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-});
+    height: "auto",
+    backgroundColor: "#FFFFFF",
+    padding: "2rem",
+    borderRadius: "0.3rem",
+    boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
 
-export const ContactButton = styled(Button)({
+    [theme.breakpoints.down('sm')]: {
+        width: "80%",
+        padding: "1rem",
+    },
+
+    [theme.breakpoints.down('xs')]: {
+        width: "100%",
+    },
+}));
+
+export const ContactButton = styled(Button)(({ theme }) => ({
     marginTop: "0.3rem",
     backgroundColor: "#222222",
     borderRadius: "0.2rem",
@@ -54,4 +76,4 @@ export const ContactButton = styled(Button)({
     '&:hover': {
         backgroundColor: "#333333",
     }
-});
+}));

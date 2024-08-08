@@ -3,7 +3,7 @@ import {theme} from "../../theme.tsx";
 
 export const paragraphStyles: SxProps = {
     color: theme.palette.text.primary,
-    fontFamily: 'sans-serif',
+    // fontFamily: 'sans-serif',
     fontSize: {
         xs: '0.8rem',
         sm: '1rem',
