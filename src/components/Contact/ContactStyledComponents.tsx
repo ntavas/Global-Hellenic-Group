@@ -5,7 +5,7 @@ export const ContactPageContainer = styled(Box)(({ theme }) => ({
     flexDirection: "row",
     height: "auto",
     width: "100vw",
-    backgroundColor: "#F7F7F7",
+    // backgroundColor: "#F7F7F7",
     // padding: "2rem",
     margin: '0',
 

@@ -21,13 +21,24 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                                 {strings.videoDescription_1}
                             </Typography>
                             <Box sx={videoContainerSmallScreenStyles}>
-                                <ReactPlayer url='https://www.youtube.com/embed/zpOULjyy-n8?rel=0' width='100%' height='100%' style={{ position: 'absolute', top: 0, left: 0 }}/>
+                                <ReactPlayer 
+                                    url='https://www.youtube.com/watch?v=_eHAfta-9S0'
+                                    width='100%' 
+                                    height='100%'
+                                    style={{ position: 'absolute', top: 0, left: 0 }} 
+                                    controls // Add this line
+                                />
                             </Box>
                         </>
                     ) : (
                         <>
                             <Box sx={videoContainerStyles}>
-                                <ReactPlayer url='https://www.youtube.com/embed/zpOULjyy-n8?rel=0' width='100%' height='100%' />
+                                <ReactPlayer 
+                                    url='https://www.youtube.com/watch?v=_eHAfta-9S0'
+                                    width='100%' 
+                                    height='100%' 
+                                    controls // Add this line
+                                />
                             </Box>
                             <Box sx={descriptionStyles}>
                                 <Typography variant="h3" sx={typographyHeaderStyles}>{strings.videoHeader_1}</Typography>
@@ -46,7 +57,13 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                                 {strings.videoDescription_2}
                             </Typography>
                             <Box sx={videoContainerSmallScreenStyles}>
-                                <ReactPlayer url='https://www.youtube.com/embed/zpOULjyy-n8?rel=0' width='100%' height='100%' style={{ position: 'absolute', top: 0, left: 0 }}/>
+                                <ReactPlayer 
+                                    url='https://www.youtube.com/watch?v=GCY64tL0f3Q'
+                                    width='100%' 
+                                    height='100%'
+                                    style={{ position: 'absolute', top: 0, left: 0 }} 
+                                    controls // Add this line
+                                />
                             </Box>
                         </>
                     ) : (
@@ -58,7 +75,12 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                                 </Typography>
                             </Box>
                             <Box sx={videoContainerStyles}>
-                                <ReactPlayer url='https://www.youtube.com/embed/zpOULjyy-n8?rel=0' width='100%' height='100%' />
+                                <ReactPlayer 
+                                    url='https://www.youtube.com/watch?v=GCY64tL0f3Q'
+                                    width='100%' 
+                                    height='100%' 
+                                    controls // Add this line
+                                />
                             </Box>
                         </>
                     )}

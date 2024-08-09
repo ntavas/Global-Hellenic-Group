@@ -20,6 +20,10 @@ interface HomeProps {
 
 const Home = (props: HomeProps, ref: Ref<HTMLDivElement>) => {
 
+    const handleContactUsClick = () => {
+        props.handleNavigation('contact');
+    };
+
     return (
         <>
         <Navbar handleNavigation={props.handleNavigation}/>
@@ -37,7 +41,7 @@ const Home = (props: HomeProps, ref: Ref<HTMLDivElement>) => {
                     </Box>
                 </ImageAndParagraphContainer>
                 <Box flex={1} display="flex" justifyContent="center" alignItems="top">
-                    <HomeButton>
+                    <HomeButton onClick={handleContactUsClick}>
                         <span className="text">{strings.homeContactUsButton}</span>
                         <ArrowRightAltIcon className="arrow" />
                     </HomeButton>

@@ -40,7 +40,7 @@ export const videoContainerStyles: SxProps = {
   height: "70%",
   borderRadius: "2.5rem",
   overflow: "hidden",
-  backgroundColor: 'lightblue',
+  // backgroundColor: 'lightblue',
 };
 
 export const videoContainerSmallScreenStyles: SxProps = {
@@ -49,7 +49,7 @@ export const videoContainerSmallScreenStyles: SxProps = {
   paddingTop: "56.25%", // 16:9 aspect ratio
   borderRadius: "2.5rem",
   overflow: "hidden",
-  backgroundColor: 'lightblue',
+  // backgroundColor: 'lightblue',
   marginBottom: "1rem",
 };
 
@@ -73,7 +73,7 @@ export const typographyHeaderStyles: SxProps = {
   color: "#001122",
   fontWeight: "bold",
   [theme.breakpoints.down('md')]: {
-    fontSize: "32px",
+    fontSize: "28px",
     marginTop: "1rem",
   },
 };

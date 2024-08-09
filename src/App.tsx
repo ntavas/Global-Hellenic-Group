@@ -6,12 +6,13 @@ import About from './components/About/About.tsx';
 import Contact from './components/Contact/Contact.tsx';
 import Footer from "./components/Footer/Footer.tsx";
 import React from "react";
+import Services from './components/Services/Services.tsx';
 
 function App() {
     const homeRef = React.useRef<HTMLDivElement | null>(null);
     const videoRef = React.useRef<HTMLDivElement | null>(null);
     const aboutRef = React.useRef<HTMLDivElement | null>(null);
-    const workRef = React.useRef<HTMLDivElement | null>(null);
+    const servicesRef = React.useRef<HTMLDivElement | null>(null);
     const contactRef = React.useRef<HTMLDivElement | null>(null);
 
     const handleNavigation = (sectionId: string) => {
@@ -26,8 +27,8 @@ function App() {
             case 'about':
                 sectionEl = aboutRef.current;
                 break;
-            case 'work':
-                sectionEl = workRef.current;
+            case 'services':
+                sectionEl = servicesRef.current;
                 break;
             case 'contact':
                 sectionEl = contactRef.current;
@@ -47,6 +48,7 @@ function App() {
                 
                 <Home handleNavigation={handleNavigation} ref={homeRef} id="home"/>
                 <Video ref={videoRef} id="video"/>
+                <Services ref={servicesRef} id="services"/>
                 <About ref={aboutRef} id="about"/>
                 <Contact ref={contactRef} id="contact"/>
                 <Footer/>

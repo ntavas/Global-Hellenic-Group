@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ handleNavigation }) => {
   const navList = [
     { text: strings.navBarHome, page: 'home' },
     { text: strings.navBarAbout, page: 'about' },
-    { text: strings.navBarServices, page: 'video' },
+    { text: strings.navBarServices, page: 'services' },
     { text: strings.navBarContact, page: 'contact' }
   ];
 
