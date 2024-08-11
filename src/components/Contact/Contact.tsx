@@ -1,9 +1,11 @@
-import {TextField, Typography} from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import strings from "../../assets/context/strings";
-import {useState} from "react";
-import {ContactPageContainer, LeftContainer, RightContainer, ContactForm, ContactButton} from "./ContactStyledComponents";
-import {headerStyles, paragraphStyles} from "./ContactStyles.tsx";
-import {forwardRef} from "react";
+import { useState } from "react";
+import { ContactPageContainer, LeftContainer, RightContainer, ContactForm, ContactButton } from "./ContactStyledComponents";
+import { headerStyles, paragraphStyles } from "./ContactStyles.tsx";
+import { forwardRef } from "react";
+
+import emailjs from '@emailjs/browser';
 
 const Contact = (props: any, ref: any) => {
     const [formData, setFormData] = useState({
@@ -14,16 +16,44 @@ const Contact = (props: any, ref: any) => {
         message: '',
     });
 
+    const [sent, setSent] = useState(false);
+    const [disabled, setDisabled] = useState(false);
+    const [statusMessage, setStatusMessage] = useState<string | null>(null);
+
     const handleChange = (event: any) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
     };
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
-        console.log('Form Submitted:', formData);
-        // TODO: Add form submission logic here
-    };
+        setDisabled(true); // Disable form and button after submission
+        setStatusMessage(null); // Reset the status message
 
+        // EmailJS service ID, template ID, and user ID from your EmailJS account
+        const serviceID = 'service_cbuzn68';
+        const templateID = 'template_9ab8qx9';
+        const userID = 'wSpDF0LVxvYZsCuEr';
+
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+            from_phoneNumber: formData.telephone,
+            from_lastName: formData.lastName,
+        };
+
+        emailjs.send(serviceID, templateID, templateParams, userID)
+            .then((response) => {
+                console.log('Email sent successfully:', response.status, response.text);
+                setSent(true);
+                setStatusMessage(strings.contactSuccessMessage); // Set success message
+            })
+            .catch((err) => {
+                console.error('Failed to send email:', err);
+                setDisabled(false); // Re-enable form if there's an error
+                setStatusMessage(strings.contactErrorMessage); // Set error message
+            });
+    };
 
     return (
         <ContactPageContainer ref={ref} id="contact">
@@ -42,6 +72,7 @@ const Contact = (props: any, ref: any) => {
                             margin="dense"
                             fullWidth
                             required
+                            disabled={disabled}
                         />
                         <TextField
                             label={strings.contactLastName}
@@ -50,6 +81,7 @@ const Contact = (props: any, ref: any) => {
                             onChange={handleChange}
                             margin="dense"
                             fullWidth
+                            disabled={disabled}
                         />
                         <TextField
                             label={strings.contactEmail}
@@ -60,6 +92,7 @@ const Contact = (props: any, ref: any) => {
                             fullWidth
                             type="email"
                             required
+                            disabled={disabled}
                         />
                         <TextField
                             label={strings.contactPhoneNumber}
@@ -68,6 +101,7 @@ const Contact = (props: any, ref: any) => {
                             onChange={handleChange}
                             margin="dense"
                             fullWidth
+                            disabled={disabled}
                         />
                         <TextField
                             label={strings.contactMessage}
@@ -78,11 +112,17 @@ const Contact = (props: any, ref: any) => {
                             fullWidth
                             multiline
                             rows={10}
+                            disabled={disabled}
                         />
-                        <ContactButton type="submit" variant="contained">
+                        <ContactButton type="submit" variant="contained" disabled={disabled}>
                             {strings.contactButtonSend}
                         </ContactButton>
                     </form>
+                    {statusMessage && (
+                        <Typography sx={{ marginTop: 2, alignItems: 'center', textAlign: 'center', color: sent ? 'green' : 'red' }}>
+                            {statusMessage}
+                        </Typography>
+                    )}
                 </ContactForm>
             </RightContainer>
         </ContactPageContainer>

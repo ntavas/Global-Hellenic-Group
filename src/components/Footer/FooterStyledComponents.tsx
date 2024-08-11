@@ -46,7 +46,7 @@ export const Right = styled(Box)(({ theme }) => ({
     flexDirection: "column",
     alignItems: "flex-end",
     justifyContent: "center",
-    gap: "1rem",
+    gap: "0.5rem",
     flex: 1,
 
     [theme.breakpoints.down('sm')]: {

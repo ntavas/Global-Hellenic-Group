@@ -5,10 +5,10 @@ export const headerStyle = {
   fontWeight: '500',
   color: theme.palette.secondary.main,
   fontSize: {
-    xs: '2rem', // small screens
-    sm: '2rem',   // medium screens
-    md: '2.5rem', // large screens
-    lg: '3rem',   // extra large screens
+    xs: '2rem', 
+    sm: '2rem',
+    md: '2.5rem',
+    lg: '3rem',
   },
 };
 

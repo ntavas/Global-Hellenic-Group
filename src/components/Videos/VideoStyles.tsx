@@ -72,16 +72,17 @@ export const descriptionStyles: SxProps = {
 export const typographyHeaderStyles: SxProps = {
   color: "#001122",
   fontWeight: "bold",
+  fontSize: "2rem",
   [theme.breakpoints.down('md')]: {
-    fontSize: "28px",
+    fontSize: "1.5rem",
     marginTop: "1rem",
   },
 };
 
 export const typographyDescriptionStyles: SxProps = {
   fontSize: {
-    lg: '1.2rem',
-    xl: '1.3rem',
+    lg: '1rem',
+    xl: '1.1rem',
   },
   width: "50%",
   color: theme.palette.text.secondary,

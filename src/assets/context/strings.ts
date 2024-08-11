@@ -44,6 +44,8 @@ const string = new LocalizedStrings({
         contactMessage: "Μήνυμα",
         contactMessagePlaceHolder: "Γράψτε το μήνυμά σας...",
         contactButtonSend: "Αποστολή",
+        contactSuccessMessage: "Το μήνυμά σας στάλθηκε επιτυχώς!",
+        contactErrorMessage: "Κάτι πήγε στραβά. Παρακαλώ προσπαθήστε ξανά.",
 
         // Footer
         footerHeaderCompanyName: "Global Hellenic Group",

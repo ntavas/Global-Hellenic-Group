@@ -34,6 +34,7 @@ export const HomeButton = styled(Button)({
     backgroundColor: '#222222',
     position: 'relative',
     overflow: 'hidden',
+    marginBottom: '2rem',
     transition: 'width 0.3s ease-in-out', // Transition for button width
     boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
     '&:hover': {

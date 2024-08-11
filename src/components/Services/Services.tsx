@@ -39,7 +39,7 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
                 Δάπεδα, μοκέτες, χαλιά
               </Typography>
               <Typography paragraph sx={descriptionStyle}>
-                4,00 € ανά τ.μ.
+                4,00 € ανά τ.μ. <br/> ‎
               </Typography>
             </CardContent>
           </Card>
@@ -89,7 +89,7 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
                 Στρώμα μονό-διπλό
               </Typography>
               <Typography paragraph sx={descriptionStyle}>
-                30,00-45,00 € ανά τεμάχιο
+                30,00-45,00 € ανά τεμάχιο <br/> ‎
               </Typography>
             </CardContent>
           </Card>
