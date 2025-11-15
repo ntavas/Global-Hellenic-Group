@@ -31,7 +31,7 @@ export const headerStyles: SxProps = {
         xl: '4rem',
     },
     wordWrap: 'break-word',
-    color: '#E6C82C',
+    color: '#d38b50',
     textAlign: 'center',
     marginTop: '-25px'
 }

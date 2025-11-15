@@ -39,7 +39,7 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
                 Δάπεδα, μοκέτες, χαλιά
               </Typography>
               <Typography paragraph sx={descriptionStyle}>
-                4,00 € ανά τ.μ. <br/> ‎
+                2,50 - 4,00€ ανά τ.μ. <br/> ‎
               </Typography>
             </CardContent>
           </Card>
@@ -55,7 +55,7 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
                 Καρέκλες, πολυθρόνες
               </Typography>
               <Typography paragraph sx={descriptionStyle}>
-                5,00-8,00 € ανά τεμάχιο <br />
+                5,00 - 15,00€ ανά τεμάχιο <br />
                 Ανάλογα το μέγεθος
               </Typography>
             </CardContent>
@@ -102,7 +102,7 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
             </Box>
             <CardContent sx={cardContentStyle}>
               <Typography variant="h6" component="div">
-                Κουρτίνες σταθερές βαρέως τύπου
+                Κουρτίνες σταθερές ελαφρώς και βαρέως τύπου
               </Typography>
               <Typography paragraph sx={descriptionStyle}>
                 Τιμή κατόπιν συνεννόησης

@@ -1,7 +1,7 @@
 import {styled} from "@mui/material";
 
 export const FooterHeader = styled('h3')(({ theme }) => ({
-    color: '#b4a856',
+    color: '#d38b50',
     // fontFamily: 'Inter',
     fontSize: '1.8rem',
     margin: 0,

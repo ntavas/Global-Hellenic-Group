@@ -22,7 +22,7 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                             </Typography>
                             <Box sx={videoContainerSmallScreenStyles}>
                                 <ReactPlayer 
-                                    url='https://www.youtube.com/watch?v=_eHAfta-9S0'
+                                    url='https://www.youtube.com/watch?v=O1rJHifjAnY'
                                     width='100%' 
                                     height='100%'
                                     style={{ position: 'absolute', top: 0, left: 0 }} 
@@ -34,7 +34,7 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                         <>
                             <Box sx={videoContainerStyles}>
                                 <ReactPlayer 
-                                    url='https://www.youtube.com/watch?v=_eHAfta-9S0'
+                                    url='https://www.youtube.com/watch?v=O1rJHifjAnY'
                                     width='100%' 
                                     height='100%' 
                                     controls // Add this line
@@ -58,7 +58,7 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                             </Typography>
                             <Box sx={videoContainerSmallScreenStyles}>
                                 <ReactPlayer 
-                                    url='https://www.youtube.com/watch?v=GCY64tL0f3Q'
+                                    url='https://www.youtube.com/watch?v=E2PThqDjJhw&t=2s'
                                     width='100%' 
                                     height='100%'
                                     style={{ position: 'absolute', top: 0, left: 0 }} 
@@ -76,7 +76,7 @@ const Video = (_props: VideoProps, ref: Ref<HTMLDivElement>) => {
                             </Box>
                             <Box sx={videoContainerStyles}>
                                 <ReactPlayer 
-                                    url='https://www.youtube.com/watch?v=GCY64tL0f3Q'
+                                    url='https://www.youtube.com/watch?v=E2PThqDjJhw&t=2s'
                                     width='100%' 
                                     height='100%' 
                                     controls // Add this line
