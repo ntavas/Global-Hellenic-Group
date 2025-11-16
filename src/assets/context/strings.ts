@@ -49,10 +49,10 @@ const string = new LocalizedStrings({
 
         // Footer
         footerHeaderCompanyName: "International Hellenic Group",
-        footerTextLocation: "Global Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
+        footerTextLocation: "International Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
         footerTextPhone: "+30 6940839572",
         footerTextEmail: "info@ghg.gr",
-        copyRight: "Copyright © 2024 Global Hellenic Group",
+        copyRight: "Copyright © 2024 International Hellenic Group",
     }
 });
 

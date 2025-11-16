@@ -1,5 +1,4 @@
 import { Box, Typography, Card, CardContent, Grid } from '@mui/material';
-import SchoolIcon from '@mui/icons-material/School';
 import WorkHistoryOutlinedIcon from '@mui/icons-material/WorkHistoryOutlined';
 import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
 import strings from "../../assets/context/strings.ts";

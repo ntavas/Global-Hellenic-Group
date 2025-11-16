@@ -46,11 +46,11 @@ function App() {
         <>
             <Box>
                 
-                <Home handleNavigation={handleNavigation} ref={homeRef} id="home"/>
-                <Video ref={videoRef} id="video"/>
-                <Services ref={servicesRef} id="services"/>
-                <About ref={aboutRef} id="about"/>
-                <Contact ref={contactRef} id="contact"/>
+                <Home handleNavigation={handleNavigation} ref={homeRef}/>
+                <Video ref={videoRef}/>
+                <Services ref={servicesRef}/>
+                <About ref={aboutRef}/>
+                <Contact ref={contactRef}/>
                 <Footer/>
             </Box>
         </>

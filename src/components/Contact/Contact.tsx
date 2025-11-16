@@ -7,7 +7,7 @@ import { forwardRef } from "react";
 
 import emailjs from '@emailjs/browser';
 
-const Contact = (props: any, ref: any) => {
+const Contact = (ref: any) => {
     const [formData, setFormData] = useState({
         name: '',
         lastName: '',
