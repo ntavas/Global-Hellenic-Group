@@ -1,16 +1,18 @@
 import { TextField, Typography } from "@mui/material";
 import strings from "../../assets/context/strings";
-import { useState } from "react";
+import { useState, forwardRef, Ref } from "react";
 import { ContactPageContainer, LeftContainer, RightContainer, ContactForm, ContactButton } from "./ContactStyledComponents";
 import { headerStyles, paragraphStyles } from "./ContactStyles.tsx";
-import { forwardRef } from "react";
 
 import emailjs from '@emailjs/browser';
 
-const Contact = (ref: any) => {
+interface ContactProps {}
+
+const Contact = (_props: ContactProps, ref: Ref<HTMLDivElement>) => {
     const [formData, setFormData] = useState({
         name: '',
         lastName: '',
+        company: '',
         email: '',
         telephone: '',
         message: '',
@@ -31,7 +33,7 @@ const Contact = (ref: any) => {
 
         // EmailJS service ID, template ID, and user ID from your EmailJS account
         const serviceID = 'service_cbuzn68';
-        const templateID = 'template_9ab8qx9';
+        const templateID = 'template_84cl5yz';
         const userID = 'wSpDF0LVxvYZsCuEr';
 
         const templateParams = {
@@ -40,6 +42,7 @@ const Contact = (ref: any) => {
             message: formData.message,
             from_phoneNumber: formData.telephone,
             from_lastName: formData.lastName,
+            from_companyName: formData.company,
         };
 
         emailjs.send(serviceID, templateID, templateParams, userID)
@@ -71,8 +74,8 @@ const Contact = (ref: any) => {
                             onChange={handleChange}
                             margin="dense"
                             fullWidth
-                            required
                             disabled={disabled}
+                            required
                         />
                         <TextField
                             label={strings.contactLastName}
@@ -82,6 +85,7 @@ const Contact = (ref: any) => {
                             margin="dense"
                             fullWidth
                             disabled={disabled}
+                            required
                         />
                         <TextField
                             label={strings.contactEmail}
@@ -98,6 +102,16 @@ const Contact = (ref: any) => {
                             label={strings.contactPhoneNumber}
                             name="telephone"
                             value={formData.telephone}
+                            onChange={handleChange}
+                            margin="dense"
+                            fullWidth
+                            required
+                            disabled={disabled}
+                        />
+                        <TextField
+                            label={strings.contactCompany}
+                            name="company"
+                            value={formData.company}
                             onChange={handleChange}
                             margin="dense"
                             fullWidth

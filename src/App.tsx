@@ -45,7 +45,7 @@ function App() {
     return (
         <>
             <Box>
-                
+
                 <Home handleNavigation={handleNavigation} ref={homeRef}/>
                 <Video ref={videoRef}/>
                 <Services ref={servicesRef}/>

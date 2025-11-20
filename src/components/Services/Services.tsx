@@ -114,7 +114,6 @@ const Services = (_props: ServicesProps, ref: Ref<HTMLDivElement>) => {
 
       <Typography variant="body2" sx={{ marginTop: '2rem', textAlign: 'center', color: '#888888' }}>
         *Οι παραπάνω τιμές δεν περιλαμβάνουν Φ.Π.Α. <br />
-        Ανάλογα τον όγκο των εργασιών η εταιρία μας προσφέρει στην επιχείρησή σας έκπτωση έως και 50% σε όλο τον τιμοκατάλογο.
       </Typography>
     </Box>
   );

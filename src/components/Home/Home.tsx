@@ -9,7 +9,7 @@ import {
     HeaderContainer,
     ImageAndParagraphContainer
 } from "./HomeStyledComponents.tsx";
-import {headerStyles, paragraphStyles} from "./HomeStyles.tsx";
+import {headerStyles, paragraphStyles, subHeaderStyles} from "./HomeStyles.tsx";
 import Navbar from "../Navbar/Navbar.tsx";
 import {forwardRef, Ref} from "react";
 
@@ -35,6 +35,9 @@ const Home = (props: HomeProps, ref: Ref<HTMLDivElement>) => {
                 <ImageAndParagraphContainer>
                     <Box sx={{ borderRadius: "1.5rem", overflow: "hidden" }}>
                         <HomeImage src={workersImage} alt="image" />
+                    </Box>
+                    <Box flex={1} display="flex" justifyContent="center" alignItems="center">
+                        <Typography sx={subHeaderStyles}>{strings.homeHeader}</Typography>
                     </Box>
                     <Box flex={1} display="flex" justifyContent="center" alignItems="center">
                         <Typography sx={paragraphStyles}>{strings.homeParagraph}</Typography>

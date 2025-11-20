@@ -8,8 +8,8 @@ const string = new LocalizedStrings({
         navBarAbout:"Η Εταιρεία μας",
         navBarServices:"Υπηρεσίες",
         navBarContact:"Επικοινωνία",
-        homeHeader: "Ο απόλυτος σύμμαχος στην καθαριότητα!",
-        homeParagraph: "Με εξειδίκευση στο πλύσιμο και άμεσο στέγνωμα επί τόπου, προσφέρουμε ολοκληρωμένες υπηρεσίες καθαρισμού για ξενοδοχεία, εκκλησίες, βιομηχανικούς χώρους, γραφεία και κατοικίες, εγγυημένα για ένα άψογο αποτέλεσμα.",
+        homeHeader: "Βιολογικός Καθαρισμός με σίγουρα αποτελέσματα",
+        homeParagraph: "Πλύσιμο και άμεσο στέγνωμα επί τόπου για ξενοδοχεία, επαγγελματικούς χώρους και κατοικίες. Εγγυημένο αποτέλεσμα και άμεση εξυπηρέτηση.",
         homeContactUsButton: "Επικοινωνία",
         // Video Page
         videoHeader_1: "Ροή Εργασιών Καθαρισμού",
@@ -39,6 +39,7 @@ const string = new LocalizedStrings({
         contactParagraph: "Χρειάζεστε περισσότερες πληροφόριες; Συμπληρώστε την φόρμα και θα επικοινωνήσουμε μαζί σας.",
         contactName: "Όνομα",
         contactLastName: "Επώνυμο",
+        contactCompany: "Όνομα Εταιρείας (Προαιρετικό)",
         contactEmail: "Email",
         contactPhoneNumber: "Τηλέφωνο",
         contactMessage: "Μήνυμα",
@@ -51,7 +52,7 @@ const string = new LocalizedStrings({
         footerHeaderCompanyName: "International Hellenic Group",
         footerTextLocation: "International Hellenic Group ΙΚΕ , Παν. Τσαλδάρη 1 , 105 52 , Αθήνα ",
         footerTextPhone: "+30 6940839572",
-        footerTextEmail: "info@ghg.gr",
+        footerTextEmail: "info@inhg.gr",
         copyRight: "Copyright © 2024 International Hellenic Group",
     }
 });

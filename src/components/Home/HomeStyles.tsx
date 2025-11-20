@@ -22,6 +22,20 @@ export const paragraphStyles: SxProps = {
     textAlign: 'center',
 }
 
+export const subHeaderStyles: SxProps = {
+    fontSize: {
+        xs: '1rem',
+        sm: '1.5rem',
+        md: '2rem',
+        lg: '2rem',
+        xl: '2rem',
+    },
+    wordWrap: 'break-word',
+    color: theme.palette.text.primary,
+    textAlign: 'center',
+    marginBottom: '10px'
+}
+
 export const headerStyles: SxProps = {
     fontSize: {
         xs: '1.5rem',
